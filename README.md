@@ -28,12 +28,12 @@ Please look at [this page](https://monday.com/developers/apps/intro) to run on t
 ### Configuration
 Before running Data Uploader, you must configure Data Uploader.
 
-You must have Configuratio board
-![](https://raw.githubusercontent.com/hiroTochigi/Data-Uploader/master/images/Data%20Uploader.png)
+You must have Configuration board
+![img](https://raw.githubusercontent.com/hiroTochigi/Data-Uploader/master/images/Data%20Uploader.png)
 
 
 This is an example of Configuration board.
-![](https://raw.githubusercontent.com/hiroTochigi/Data-Uploader/master/images/Configuration.png)
+![img](https://raw.githubusercontent.com/hiroTochigi/Data-Uploader/master/images/Configuration.png)
 1. Group name must be a name of a target board.
 1. The first column must be local Excel/CSV file headers
 1. `Monday` column must be column headers in the target Board
@@ -43,7 +43,7 @@ This is an example of Configuration board.
 
 
 The below is the example of Configuration board, a local data set, and a target board
-![](https://raw.githubusercontent.com/hiroTochigi/Data-Uploader/master/images/Configuration2.PNG)
+![img](https://raw.githubusercontent.com/hiroTochigi/Data-Uploader/master/images/Configuration2.PNG)
 
 
 ## Inspiration
