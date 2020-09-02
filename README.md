@@ -29,21 +29,21 @@ Please look at [this page](https://monday.com/developers/apps/intro) to run on t
 Before running Data Uploader, you must configure Data Uploader.
 
 You must have Configuration board
-![img](https://raw.githubusercontent.com/hiroTochigi/Data-Uploader/master/images/Data%20Uploader.png)
+![img1](https://raw.githubusercontent.com/hiroTochigi/Data-Uploader/master/images/Data%20Uploader.png)
 
 
 This is an example of Configuration board.
-![img](https://raw.githubusercontent.com/hiroTochigi/Data-Uploader/master/images/Configuration.png)
+![img2](https://raw.githubusercontent.com/hiroTochigi/Data-Uploader/master/images/Configuration.png)
 1. Group name must be a name of a target board.
 1. The first column must be local Excel/CSV file headers
 1. `Monday` column must be column headers in the target Board
 1. `Is ID?` column indicates which column should be identifier. Data Uploader compares values of this column to identify each item on both data set. In the above example, Request and Name are the IDs.
-1. `Exclusive Labels` column informs Data Uploader what Label value should not be changed. In the above example, If `Status` column on Marketig board has value `Stuck` or `On hold`, Data Uploader does not change `Status` column whatever the local data set has in `Status` column. (Only works on Label type)
-1. `Critedia` column informs Data Uploader updating criteria.`Criteria` must have `,==` or `,!=` after a label value. In the above example, if some rows in the local data set has `Status` column having value `Completed`, Data Uploader does not update the rows on Monday board. If `Criteria` column in Status row has `Done,==`, only items with `Status` value having `Done` are uploaded (Only works on Label).
+1. `Exclusive Labels` column informs Data Uploader what Label value should not be changed. In the above example, If `Status` column on Marketing board has value `Stuck` or `On hold`, Data Uploader does not change `Status` column whatever the local data set has in `Status` column. (Only works on Label type)
+1. `Criteria` column informs Data Uploader updating criteria.`Criteria` must have `,==` or `,!=` after a label value. In the above example, if some rows in the local data set has `Status` column having value `Completed`, Data Uploader does not update the rows on Monday board. If `Criteria` column in Status row has `Done,==`, only items with `Status` value having `Done` are uploaded (Only works on Label).
 
 
 The below is the example of Configuration board, a local data set, and a target board
-![img](https://raw.githubusercontent.com/hiroTochigi/Data-Uploader/master/images/Configuration2.PNG)
+![img3](https://raw.githubusercontent.com/hiroTochigi/Data-Uploader/master/images/Configuration2.PNG)
 
 
 ## Inspiration
@@ -67,7 +67,7 @@ This application can take Excel file and update items via Monday GraphQL API.
 
 User can specify id on Monday board data and local Excel data, so this app choose new data from Excel file and upload them.
 
-This app let our colleagues release from their tedious data entry tasks and provides error free data entry services.
+This app releases our colleagues from their tedious data entry tasks and provides error free data entry services.
 
 ## What it does
 Data Uploader takes local Excel file and update Monday board.
@@ -75,16 +75,16 @@ This application compares the local data and the data on the Monday board, and i
 This application can update the following columns: name, text, number, date, long-text, and label.
 
 ## How I built it
-I build it by React.js
+I built it with React.js
 
 ## Challenges I ran into
-Generate GraphQL query according to the data type.
-Transform Excel/CSV Data format into JavaScript Data format. 
-Come up with the data structure to compare two data set.
+Generating GraphQL query according to the data type.
+Transforming Excel/CSV Data format into JavaScript Data format. 
+Coming up with the data structure to compare two data sets.
 Asynchronous function calls 
 
 ## Accomplishments that I'm proud of
-Generate configuration data from Configuration variables.
+Generating configuration data from Configuration variables.
 
 ## What I learned
 JavaScript, mainly how to use Promise Object and functional programming paradigm
@@ -92,11 +92,11 @@ React.js
 
 ## What's next for Data Uploader
 Prevent the users from making the wrong configuration file.
-Almost all errors are generated because of the incorrect configuration file or the wrong data in the local data set, such as number column having text and label column having non-existing label.
+Almost all errors are generated because of the incorrect configuration file or the wrong data in the local data set, such as a number column having text and a label column having a nonexistent label.
 
-Add GUI configuration file generator to prevent typo.
-Add more user friendly error handling method, such as before generating query, scan each local column data and warning the potential problem to users.
-Add history mode: reverse the uploading event.
+Add a GUI configuration file generator to prevent typos.
+Add a more user friendly error handling method, such as before generating a query, scan each local column data and warning users of the potential problem.
+Add a history mode: reverse the uploading event.
 
 
 
