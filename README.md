@@ -94,9 +94,9 @@ React.js
 Prevent the users from making the wrong configuration file.
 Almost all errors are generated because of the incorrect configuration file or the wrong data in the local data set, such as a number column having text and a label column having a nonexistent label.
 
-Add a GUI configuration file generator to prevent typos.
-Add a more user friendly error handling method, such as before generating a query, scan each local column data and warning users of the potential problem.
-Add a history mode: reverse the uploading event.
+1. Add a GUI configuration file generator to prevent typos.
+1. Add a more user friendly error handling method, such as before generating a query, scan each local column data and warning users of the potential problem.
+1. Add a history mode: reverse the uploading event.
 
 
 
